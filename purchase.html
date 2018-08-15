@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BUY NOW</title>
+</head>
+<body>
+	<h1> <center>FILL IN YOUR DETAILS</center></h1>
+
+ <link rel="stylesheet" type="text/css" href= purchaseCSS.css>
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">NZ</option>
+      <option value="usa">USA</option>
+
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="CARD DETAILS" placeholder="384XXXXXXXXX...." style="height:40px"></textarea>
+
+    <input type="submit" value="BUY NOW">
+
+  </form>
+</div>
+
+
+
+
+<script type="text/javascript">
+	// var modal = document.getElementById('myModal');
+
+	$(".buy").click(function() {
+		// $(".modal").css("display", "block");
+		alert("Purchase successful");
+		console.log("Working!");
+	});
+
+	// When the user clicks on <span> (x), close the modal
+	$(".close").click(function() {
+	    // $("#modal").css({display: "none"});
+	});
+
+	// When the user clicks anywhere outside of the modal, close it
+	// window.onclick = function(event) {
+	//     if (event.target == modal) {
+	//         $("#modal").css({"display": "none"});
+	//     }
+	// }
+</script>
+
+</body>
+</html>
